@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#61A8E6"
+    tools:context=".ManageUserActivity">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="420dp"
+        android:layout_height="65dp"
+        android:background="#061DA4"
+        android:gravity="center"
+        android:text="USER PROFILE"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtManageUserEmail"
+        android:layout_width="348dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="34dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <EditText
+        android:id="@+id/txtManageUserPassword"
+        android:layout_width="348dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtManageUserEmail" />
+
+    <Button
+        android:id="@+id/btnUpdateUser"
+        android:layout_width="312dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="54dp"
+        android:backgroundTint="#0B1E83"
+        android:onClick="updateUser"
+        android:text="Update"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtManageUserPassword" />
+
+    <Button
+        android:id="@+id/btnCancelUser"
+        android:layout_width="309dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="54dp"
+        android:backgroundTint="#5368D3"
+        android:onClick="cancelBtn"
+        android:text="Cancel"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdateUser" />
+
+    <Button
+        android:id="@+id/btnDeleteUser"
+        android:layout_width="309dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:onClick="deleteUser"
+        android:text="Delete Account"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCancelUser" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="192dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#0B1E83"
+        android:onClick="allowNotification"
+        android:text="Allow Notifications"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="132dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:srcCompat="@drawable/user" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#61A8E6"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="416dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="5dp"
+        android:background="#061DA4"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="WELCOME TO LUXEVISTA RESORT"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnChkRooms"
+        android:layout_width="342dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="38dp"
+        android:backgroundTint="#0B1E83"
+        android:onClick="checkRoomsBtn"
+        android:text="Rooms"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.536"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/btnBkingHistory"
+        android:layout_width="341dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#0B1E83"
+        android:onClick="bookingHistoryBtn"
+        android:text="Booking History"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnChkRooms" />
+
+    <Button
+        android:id="@+id/btnChkServices"
+        android:layout_width="337dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#0B1E83"
+        android:onClick="servicesBtn"
+        android:text="Services"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBkingHistory" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="144dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#465DDE"
+        android:onClick="logout"
+        android:pointerIcon="arrow"
+        android:text="Logout"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#0B1E83"
+        android:onClick="manageAcc"
+        android:text="Manage Account"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOffersView" />
+
+    <Button
+        android:id="@+id/btnOffersView"
+        android:layout_width="336dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#0B1E83"
+        android:onClick="ViewOffers"
+        android:text="Offers "
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnChkServices" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="188dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="112dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/hotellogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

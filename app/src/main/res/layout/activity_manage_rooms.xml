@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#61A8E6"
+    tools:context=".ManageRooms">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="416dp"
+        android:layout_height="62dp"
+        android:background="#061DA4"
+        android:gravity="center"
+        android:text="ADD  ROOMS"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtEnterID"
+        android:layout_width="314dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Enter ID"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInsertIMG" />
+
+    <ImageView
+        android:id="@+id/insertRoomsIMG"
+        android:layout_width="241dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/txtEnterRoomType"
+        android:layout_width="314dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Enter Room Type"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnterID" />
+
+    <EditText
+        android:id="@+id/txtEnterRoomPrice"
+        android:layout_width="314dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Enter Price"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnterRoomType" />
+
+    <Button
+        android:id="@+id/btnAddRoom"
+        android:layout_width="314dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="19dp"
+        android:backgroundTint="#0B1E83"
+        android:onClick="addRoomBtn"
+        android:text="Add Room"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnterDetails" />
+
+    <Button
+        android:id="@+id/btnInsertIMG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#0B1E83"
+        android:onClick="inserImgBtn"
+        android:text="Insert Image"
+        android:textColorLink="@color/purple"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insertRoomsIMG" />
+
+    <Button
+        android:id="@+id/btnViewAllRooms"
+        android:layout_width="314dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#0B1E83"
+        android:onClick="viewAllRoomsBtn"
+        android:text="View All Rooms"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddRoom" />
+
+    <EditText
+        android:id="@+id/txtEnterDetails"
+        android:layout_width="314dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter Details"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnterRoomPrice" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

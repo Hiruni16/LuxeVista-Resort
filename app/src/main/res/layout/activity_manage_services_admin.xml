@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#61A8E6"
+    tools:context=".ManageServicesAdmin">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="418dp"
+        android:layout_height="58dp"
+        android:background="#061DA4"
+        android:gravity="center"
+        android:text="ADD SERVICES"
+        android:textColor="@color/white"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgServiceInsert"
+        android:layout_width="242dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/txtEnterServiceID"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="31dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Enter Service ID"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInsertService" />
+
+    <EditText
+        android:id="@+id/txtEnterServiceType"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Enter Service Type"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnterServiceID" />
+
+    <EditText
+        android:id="@+id/txtEnterServiceDetails"
+        android:layout_width="337dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter Details"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnterServiceType" />
+
+    <EditText
+        android:id="@+id/txtEnterServicePrice"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Enter Service Price"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnterServiceDetails" />
+
+    <Button
+        android:id="@+id/btnInsertService"
+        android:layout_width="148dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#0B1E83"
+        android:onClick="selectServiceImage"
+        android:text="Insert Image"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgServiceInsert" />
+
+    <Button
+        android:id="@+id/btnAddServcies"
+        android:layout_width="337dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#0B1E83"
+        android:onClick="addService"
+        android:text="Add"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnterServicePrice" />
+
+    <Button
+        android:id="@+id/btnViewServices"
+        android:layout_width="337dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#0B1E83"
+        android:onClick="viewAllServices"
+        android:text="View All Services"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddServcies" />
+</androidx.constraintlayout.widget.ConstraintLayout>

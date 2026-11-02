@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#61A8E6"
+    tools:context=".AdminHomeActivity">
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="279dp"
+        android:layout_height="117dp"
+        android:layout_marginEnd="4dp"
+        android:background="#061DA4"
+        android:gravity="center"
+        android:text="ADMIN"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="369dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="21dp"
+        android:backgroundTint="#0B1E83"
+        android:onClick="manageServicesBtn"
+        android:text="Add a Service"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="363dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#0B1E83"
+        android:onClick="manageRoomsBtn"
+        android:text="Add a Room"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="180dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#465DDE"
+        android:onClick="adminLogout"
+        android:text="Logout"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="353dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="29dp"
+        android:backgroundTint="#BD6180"
+        android:onClick="updateRooms"
+        android:text="Manage Rooms"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="345dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="33dp"
+        android:backgroundTint="#BD6180"
+        android:onClick="updateServices"
+        android:text="Manage Services"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="126dp"
+        android:layout_height="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hotellogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

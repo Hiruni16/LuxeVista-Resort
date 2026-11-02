@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtViewRoomType1"
+        android:layout_width="354dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center|start"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgViewRoom"
+        android:layout_width="361dp"
+        android:layout_height="198dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewRoomType1"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtViewRoomDetails"
+        android:layout_width="354dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="5dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewRoom" />
+
+    <TextView
+        android:id="@+id/txtViewRoomPrice"
+        android:layout_width="353dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewRoomDetails" />
+
+    <Button
+        android:id="@+id/btnBookRoom"
+        android:layout_width="347dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="#0B1E83"
+        android:onClick="getSelectedRoom"
+        android:text="Book Now"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewRoomPrice" />
+</androidx.constraintlayout.widget.ConstraintLayout>

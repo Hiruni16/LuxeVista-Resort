@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#61A8E6"
+    tools:context=".ServiceReservations">
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="429dp"
+        android:layout_height="63dp"
+        android:background="#061DA4"
+        android:gravity="center"
+        android:text="Reserve a Service Now"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtDateReservations"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFullNameReservations" />
+
+    <EditText
+        android:id="@+id/txtReservationID"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Reservation ID"
+        android:inputType="text"
+        android:onClick="reserveNowBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <EditText
+        android:id="@+id/txtServiceTypeReservation"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Service Type"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtReservationID" />
+
+    <EditText
+        android:id="@+id/txtFullNameReservations"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtServiceTypeReservation" />
+
+    <EditText
+        android:id="@+id/txtTimeReservations"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Time"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDateReservations" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="341dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#0B1E83"
+        android:text="Reserve Now"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTimeReservations" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="209dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="101dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:srcCompat="@drawable/hotellogo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

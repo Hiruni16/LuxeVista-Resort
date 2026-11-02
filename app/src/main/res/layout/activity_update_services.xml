@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#61A8E6"
+    tools:context=".UpdateServices">
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="426dp"
+        android:layout_height="57dp"
+        android:background="#061DA4"
+        android:gravity="center"
+        android:text="UPDATE SERVICES"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgUpdateService"
+        android:layout_width="277dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/txtUpdateServiceID"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Service ID"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSelectServiceImg" />
+
+    <EditText
+        android:id="@+id/txtUpdateServiceType"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Service Type"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUpdateServiceID" />
+
+    <EditText
+        android:id="@+id/txtUpdateServiceDetails"
+        android:layout_width="337dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Details"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUpdateServicePrice" />
+
+    <EditText
+        android:id="@+id/txtUpdateServicePrice"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Service Price"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUpdateServiceType" />
+
+    <Button
+        android:id="@+id/btnSelectServiceImg"
+        android:layout_width="158dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#0B1E83"
+        android:onClick="selectImage"
+        android:text="Select Image"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgUpdateService" />
+
+    <Button
+        android:id="@+id/btnSearchService"
+        android:layout_width="155dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#0B1E83"
+        android:onClick="searchServicesBtn"
+        android:text="Search"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUpdateServiceDetails" />
+
+    <Button
+        android:id="@+id/btnUpdateService"
+        android:layout_width="148dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#0B1E83"
+        android:onClick="updateServiceBtn"
+        android:text="Update"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUpdateServiceDetails" />
+
+    <Button
+        android:id="@+id/btnDeleteService"
+        android:layout_width="337dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:onClick="deleteServicesBtn"
+        android:text="Delete"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdateService" />
+
+    <Button
+        android:id="@+id/btnClearAll"
+        android:layout_width="337dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#0B1E83"
+        android:onClick="clearAllServices"
+        android:text="Clear All"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDeleteService" />
+</androidx.constraintlayout.widget.ConstraintLayout>

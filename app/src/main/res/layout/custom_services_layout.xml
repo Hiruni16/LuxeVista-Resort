@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtViewServiceType"
+        android:layout_width="354dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center|start"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgViewService"
+        android:layout_width="354dp"
+        android:layout_height="175dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewServiceType"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtViewServiceDetails"
+        android:layout_width="354dp"
+        android:layout_height="90dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgViewService" />
+
+    <TextView
+        android:id="@+id/txtViewServicePrice"
+        android:layout_width="354dp"
+        android:layout_height="43dp"
+        android:gravity="center|start"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewServiceDetails" />
+
+    <Button
+        android:id="@+id/btnServiceReserve"
+        android:layout_width="354dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#0B1E83"
+        android:text="Reserve Now"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewServicePrice" />
+</androidx.constraintlayout.widget.ConstraintLayout>

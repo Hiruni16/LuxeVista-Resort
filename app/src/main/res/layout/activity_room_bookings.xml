@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#61A8E6"
+    tools:context=".RoomBookings">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="421dp"
+        android:layout_height="63dp"
+        android:background="#061DA4"
+        android:gravity="center"
+        android:text="Book a Room Now"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtBookingID"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="42dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Booking ID"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <EditText
+        android:id="@+id/txtRoomTypeBooking"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Room Type"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBookingID" />
+
+    <EditText
+        android:id="@+id/txtFullName"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCheckOutDate" />
+
+    <EditText
+        android:id="@+id/txtCheckInDate"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Check in Date"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRoomTypeBooking" />
+
+    <EditText
+        android:id="@+id/txtCheckOutDate"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Check out Date"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCheckInDate" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFullName" />
+
+    <EditText
+        android:id="@+id/txtContactNumber"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="Contact Number"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+    <Button
+        android:id="@+id/btnBookaRoom"
+        android:layout_width="338dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="43dp"
+        android:backgroundTint="#0B1E83"
+        android:onClick="bookNowBtn"
+        android:text="Book Now"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtContactNumber" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="190dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="111dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:srcCompat="@drawable/hotellogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
